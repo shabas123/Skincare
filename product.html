@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productiin</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik+Wet+Paint&display=swap"
+      rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <style>
+        .navbar {
+        background-color: #333;
+        padding: 10px 20px;
+        color: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .navbar-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+
+
+      .cart,
+      .wishlist,
+      .notification {
+        position: initial;
+      }
+
+      .cart-icon,
+      .wishlist-icon,
+      .notification-icon {
+        font-size: 24px;
+        color: white;
+        text-decoration: none;
+
+      }
+
+      .logo {
+        font-weight: 1000;
+        font-size: large;
+      }
+      .flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+      </style>
+</head>
+<body>
+    <nav class="navbar fixed-top ">
+      <img src="c:\Users\shazz\Downloads\Screenshot_2024-12-04_144108-removebg-preview.png" alt="" width="70">
+      <div class="navbar-container ms-auto">
+        <form class="navbar-form navbar-right me-4" action="/action_page.php">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search beautyMaN">
+            <i class="glyphicon glyphicon-search"></i>
+          </div>
+
+      </div>
+
+
+      <div class="wishlist me-4">
+        <a href="./wishlist.html" class="wishlist-icon">
+          <i class="fa fa-heart"></i>
+
+        </a>
+      </div>
+      </li>
+      <div class="cart">
+        <a href="./cart.html#" class="cart-icon me-4">
+          <i class="fa fa-shopping-cart"></i>
+        </a>
+      </div>
+
+      <div>
+
+      </div class="notification me-4">
+      <a href="#" class="notification-icon">
+        <i class="fa fa-bell"></i>
+         </a>
+      </div>
+      </li>
+      </ul>
+      </div>
+    </nav>
+    <div class="img-fluid mt-3">
+        <img
+          src="https://www.themancompany.com/cdn/shop/files/a_face_desktop_1900x.jpg?v=1670567586"
+          alt="" width="100%" height="300px">
+      </div>
+
+
+      <section class="cards products py-4">
+        <p class="h1 hyphenate  text-center mb-3">Cream's & Oils</p>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="https://www.themancompany.com/cdn/shop/files/Anti-AcneFaceWash6_ccb303cb-19f0-43d5-ac13-9c29aa84052b_765x.jpg?v=1687326685" class="card-img-top" alt="">
+                          <div class="card-body text-center">
+                            <p class="card-text">Anti-Acne Face Wash | Neem & Salicylic Acid</p>
+                            <h5 class="card-text mb-2"> ₹179 </h5>
+                            <a href="./shop.html" class="btn btn-warning me-3">Buy Now</a>
+                            <a href="./cart.html" class="btn btn-primary">Add to Cart</a>
+                          
+                  
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col">
+                    <div class="card">
+                        <img src="https://www.themancompany.com/cdn/shop/products/3_51569c59-679e-4680-8c01-3ad6dbaf4208_765x.jpg?v=1713855597" class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                            <p class="card-text">Under Eye Cream | Quinoa & Collagen (15gm)</p>
+                            <h5 class="card-text mb-2"> ₹209 </h5>
+                            <a href="./shop.html" class="btn btn-warning me-3">Buy Now</a>
+                            <a href="./cart.html" class="btn btn-primary">Add to Cart</a>
+
+                        </div>
+                    </div>
+                </div>
+          
+                <div class="col">
+                    <div class="card">
+                        <img src="https://www.themancompany.com/cdn/shop/files/Fresh_Face_Fusion_Kit_765x.jpg?v=1719986534" class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                            <p class="card-text">Clear Complexion CSMS Set  for Men</p>
+                            <h5 class="card-text mb-2"> ₹1142 </h5>
+                            <a href="./shop.html" class="btn btn-warning me-3">Buy Now</a>
+                            <a href="./cart.html" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="card">
+                        <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/face-pack/v/s/x/100-charcoal-peel-off-mask-for-men-100gm-detoxifies-skin-deep-original-imagzjw3cst2k3pz.jpeg?q=70&crop=false" class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                            <p class="card-text">MANCODE Charcoal Peel Off Mask for Men- 100gm</p>
+                            <h5 class="card-text mb-2"> ₹119 </h5>
+                            <a href="./shop.html" class="btn btn-warning me-3">Buy Now</a>
+                            <a href="./cart.html" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="col">
+                    <div class="card ">
+                        <img src="https://www.themancompany.com/cdn/shop/files/2_466be4ed-c2e1-4a25-8fd0-e78bc75031af_765x.jpg?v=1722871048" class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                            <p class="card-text">MUUCHSTAC Ocean for Men, Fights Acne & Pimple,</p>
+                            <h5 class="card-text mb-2"> ₹181 </h5>
+                            <a href="./shop.html" class="btn btn-warning me-3">Buy Now</a>
+                            <a href="./cart.html" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+              
+                <div class="col">
+                    <div class="card ">
+                        <img src="https://www.themancompany.com/cdn/shop/files/Deep-Charcool-combo_765x.png?v=1697017315" class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                            <p class="card-text">EDeep Char-cool Combo Complexion CSMS</p>
+                            <h5 class="card-text mb-2"> ₹778 </h5>
+                            <a href="./shop.html" class="btn btn-warning me-3">Buy Now</a>
+                            <a href="./cart.html" class="btn btn-primary">Add to Cart</a>
+                            
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://www.themancompany.com/cdn/shop/files/Lip_Lightning_regime_1_765x.jpg?v=1729499714" class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                            <p class="card-text">Lip Lightening Regime solution to all your lip problems.</p>
+                            <h5 class="card-text mb-2"> ₹278 </h5>
+                            <a href="./shop.html" class="btn btn-warning me-3">Buy Now</a>
+                            <a href="./cart.html" class="btn btn-primary">Add to Cart</a>
+                        
+                        </div>
+                    </div>
+                </div>
+          
+                <div class="col">
+                    <div class="card ">
+                        <img src="https://www.themancompany.com/cdn/shop/files/7_082c1a3d-284d-483e-b32c-34de0733b34c_765x.png?v=1707995994" class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                            <p class="card-text">The Charcoal Gang Body Wash + Shampoo + Face Scrub</p>
+                                <h5 class="card-text mb-2"> ₹1599 </h5>
+                                <a href="./shop.html" class="btn btn-warning me-3">Buy Now</a>
+                            <a href="./cart.html" class="btn btn-primary">Add to Cart</a>
+            
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col">
+                    <div class="card ">
+                        <img src="https://www.themancompany.com/cdn/shop/files/Face-Lift_765x.png?v=1697028814" class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                            <p class="card-text">Face Lift
+                                Body Perfume + Moisturising Cream+ Soap</p>
+                                <h5 class="card-text mb-2"> ₹1157</h5>
+                                <a href="./shop.html" class="btn btn-warning me-3">Buy Now</a>
+                                <a href="./cart.html" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="card ">
+                        <img src="https://www.themancompany.com/cdn/shop/products/vitamin-sheet-mask-po2_765x.png?v=1666865083" class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                            <p class="card-text">Vitamin C Sheet Mask | Vitamin C & Aloe Vera (Multi Packs)</p>
+                                <h5 class="card-text mb-2"> ₹875</h5>
+                                <a href="./shop.html" class="btn btn-warning me-3">Buy Now</a>
+                                <a href="./cart.html" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+      
+                <div class="col">
+                    <div class="card">
+                        <img src="https://www.themancompany.com/cdn/shop/files/TMC_Retinol_Primary_Image_6_f8db1763-afdb-4f54-a1ff-48b3b67a2f4d_765x.jpg?v=1720693365" class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                            <p class="card-text">1% Retinol | Anti-Aging Face Serum</p>
+                                <h5 class="card-text mb-2"> ₹474 </h5>
+                                <a href="./shop.html" class="btn btn-warning me-3">Buy Now</a>
+                                <a href="./cart.html" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+          
+                <div class="col">
+                    <div class="card">
+                        <img src="https://www.themancompany.com/cdn/shop/products/3a_c31a32e3-f4ca-48d0-9f41-7f34780b84f9_765x.jpg?v=1693457567" class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                            <p class="card-text">De-Tan Face Serum I Niacinamide & Turmeric</p>
+                                <h5 class="card-text mb-2"> ₹379 </h5>
+                                <a href="./shop.html" class="btn btn-warning me-3">Buy Now</a>
+                                <a href="./cart.html" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
+      <div class="container py-5">
+          <div class="row g-5">
+              <div class="col-lg-3 col-md-6">
+                  <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Company</h4>
+                  <a class="btn btn-link" href="/about-us/">About Us</a>
+                
+                  
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contact</h4>
+                  
+  
+
+                  <div class="branch">
+                      <h5 class="text-white">BeautyMan</h5>
+                
+                      <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 6238206339</p>
+
+                          
+                  
+                      <p class="mb-2"><i class="fa fa-envelope me-3"></i>Shazz4568@gmail.com</p>
+                  </div>
+                  
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Our product's</h4>
+                  <p class="mb-2">Oils</p>
+                  <p class="mb-2">Perfumes</p>
+                  <p class="mb-2">Hair Cream</p>
+                  <p class="mb-2">Shambu</p>
+                  <p class="mb-2">Ring's</p>
+                  <p class="mb-2">Jewellery's</p>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                  <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Stay To Upadtion</h4>
+                  <p>Sign for the latest products Choosing</p>
+                  <div class="position-relative mx-auto" style="max-width: 400px;">
+                     <a href="./singform.html"><input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="email" placeholder="Your email">
+                      <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2" fdprocessedid="g92ljl">Sign Up</button></a>
+                  </div>
+  
+              </div>
+          </div>
+      </div>
+      <div class="container">
+          <div class="copyright">
+              <div class="row">
+                  <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                      © <a class="border-bottom" href="./index.html">BeautyMan</a>, All Right Reserved. 
+                   
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</body>
+</html>

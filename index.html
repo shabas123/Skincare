@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skin careMen</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik+Wet+Paint&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap">
+  <link rel="stylesheet" href="">
+  <style>
+
+  </style>
+
+</head>
+
+<body>
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeautyMan</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik+Wet+Paint&display=swap"
+      rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      .navbar {
+        background-color: black;
+        padding: 10px 20px;
+        color: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .navbar-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+
+
+      .cart,
+      .wishlist,
+      .notification {
+        position: initial;
+      }
+
+      .cart-icon,
+      .wishlist-icon,
+      .notification-icon {
+        font-size: 24px;
+        color: white;
+        text-decoration: none;
+
+      }
+
+
+      .logo {
+        font-weight: 1000;
+        font-size: large;
+      }
+
+      .back {
+        background-color: dodgerblue;
+      }
+
+      .small {
+        background-color: black;
+      }
+
+      .navbar a:hover {
+        background: #d30e0e;
+        color: black;
+      }
+
+      .hyphenate {
+        -webkit-hyphens: auto;
+        hyphens: auto;
+      }
+
+      .prose {
+        background-color: bisque;
+      }
+
+      .offer {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 600;
+      }
+
+      .my-5 {
+        margin-top: 10rem !important;
+        margin-bottom: 10rem !important;
+      }
+
+      @media (min-width: 1200px) {
+
+        .container,
+        .container-lg,
+        .container-md,
+        .container-sm,
+        .container-xl {
+          max-width: 1140px;
+        }
+      }
+
+      @media (min-width: 992px) {
+
+        .container,
+        .container-lg,
+        .container-md,
+        .container-sm {
+          max-width: 960px;
+        }
+      }
+
+      .img00 {
+        background-color: black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar fixed-top ">
+      <a href="./index.html"><img
+          src="./image/logo.png" alt="" width="70"></a>
+      <div class="navbar-container ms-auto">
+        <form class="navbar-form navbar-right me-4" action="/action_page.php">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search beautyMaN">
+            <i class="glyphicon glyphicon-search"></i>
+          </div>
+
+      </div>
+      <div class="Singup me-4">
+        <a href="./singform.html" class="Singup ">
+          <i class="fa-solid fa-user fa-xl" style="color: #eff1f6;"></i>
+        </a>
+      </div>
+
+
+
+      </div>
+      </li>
+      <div class="cart">
+        <a href="./cart.html#" class="cart-icon">
+          <i class="fa fa-shopping-cart"></i>
+        </a>
+      </div>
+
+      <div>
+
+
+        </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="img-fluid mt-3">
+      <img
+        src="https://images-static.nykaa.com/uploads/90a3be5f-f84d-4d7c-876a-cc96528c8db4.jpg?tr=cm-pad_resize,w-1800"
+        alt="" width="100%" height="300">
+    </div>
+
+
+    <div id="collectionCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="./product-perfume.html"><img
+              src="https://images-static.nykaa.com/uploads/dc9cadf8-84f3-4e4a-8ed0-e30910600986.jpg?tr=cm-pad_resize,w-1800"
+              class="d-block w-100" alt="..." width="100%" height="250"></a>
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <a href="./product-perfume.html"><img
+              src="https://images-static.nykaa.com/uploads/b51dd8a7-19cb-4828-aa3d-287c0a1c9a5a.jpg?tr=cm-pad_resize,w-1800"
+              class="d-block w-100" alt="..." width="100%" height="250"></a>
+          <div class="carousel-caption d-none d-md-block">
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <a href="./product-perfume.html"> <img
+              src="https://images-static.nykaa.com/uploads/23d4834c-c1b4-4013-bec8-03fe797cc04c.jpg?tr=cm-pad_resize,w-1800"
+              class="d-block w-100" alt="..." width="100%" height="250"></a>
+          <div class="carousel-caption d-none d-md-block">
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#collectionCarousel" data-bs-slide="prev"
+      fdprocessedid="zzg9wx">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#collectionCarousel" data-bs-slide="next"
+      fdprocessedid="gkpwlm">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+
+
+
+    <img src="https://rukminim2.flixcart.com/fk-p-flap/1600/140/image/a19d56e1234fed98.jpg?q=20" alt=" " width="100%"
+      height="100">
+    <div>
+      <div class="back">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-4">
+              <div class="card" style="width: 100%;">
+                <a href="./product.html"><img
+                    src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQ8FLHb7t54LcHGS0fQdEI2rI2hVnGj7PrccDBKiGZ6jm68sZ4rmKvJRZv0aHi2vjm4nwvntHe4zQP5C2yUNqWqrhqthDfZiheAJMfUYa1wFcFtMfQUNDNU6A"
+                    class="card-img-top" alt="..."></a>
+
+              </div>
+
+            </div>
+            <div class="col-4">
+              <div class="card shadow " style="width: 100%;">
+                <a href="./product.html"><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKERDf9brFdDVvG_BaP7PupKdUCJwgH1pJWQ&s"
+                    class="card-img-top" alt="..."></a>
+
+              </div>
+
+            </div>
+            <div class="col-4">
+              <div class="card" style="width: 100%;">
+                <a href="./product.html"><img
+                    src="https://images-cdn.ubuy.co.in/6350248156e88c644a52d166-winter-lotion-men-protect-amp-care.jpg"
+                    class="card-img-top" alt=""></a>
+
+              </div>
+
+            </div>
+            <div class="col-4 mt-3">
+              <div class="card" style="width: 100%;">
+                <a href="./product.html"><img
+                    src="https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/f7d81275-58c3-4b96-81ce-582daa7b6c59._SL480_.png"
+                    class="card-img-top" alt=""></a>
+
+              </div>
+
+            </div>
+            <div class="col-4  mt-3">
+              <div class="card" style="width: 100%;">
+                <a href="./product.html"><img
+                    src="https://images-cdn.ubuy.co.in/6606786036a83d0d621c42ab-jvr-peel-off-face-mask-blackhead.jpg"
+                    class="card-img-top" alt="..."></a>
+
+              </div>
+
+            </div>
+
+            <div class="col-4  mt-3">
+              <div class="card" style="width: 100%;">
+                <a href="./product.html"> <img
+                    src="https://m.media-amazon.com/images/I/613P0q5WvHL.jpg" class="card-img-top" alt="..."></a>
+
+              </div>
+
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+      <div class="img00">
+        <img src="https://images-static.nykaa.com/uploads/3762c8b7-c7b4-4414-a56c-7d0a971bdea3.jpg?tr=cm-pad_resize,"
+          alt="" width="100%">
+        <div class="container-fluid">
+          <h3 class="offer justify-items-center text-center text-light mb-4 mt-3">Top Rated By Customers</h3>
+
+          <div id="collectionCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card text-center" id="thirdcard">
+
+                      <a href="./product.html"><img
+                          src="https://ssbimages.ssbeauty.in/pub/media/catalog/product/images/205698055/205698055_base.jpg"
+                          alt="" width="100%" height="190">
+                        <div class="card-body">
+                      </a>
+                      <p class="card-text text-center">Hair Wax Cream</p>
+                      <h5 class="card-title">specially formulated to be applied on facial hair. </h5>
+
+                      <div class="price mb-3">
+                        <span class="text-dark">₹99</span>
+                      </div>
+                      <a href="./product.html"
+                        class="btn btn-warning me-3">Buy Now</a>
+                      <a href="./cart.html" class="btn btn-primary">Add to Cart</a>
+
+
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="card text-center" id="thirdcard">
+                    <img
+                      src="https://www.themancompany.com/cdn/shop/files/2_9bc8f018-b400-4483-bea4-067094fde795_765x.jpg?v=1722873724"
+                      alt="" width="100%" height="200">
+                    <div class="card-body">
+                      <p class="text-uppercase text-muted mb-1">Anti-Pollution Face Wash</p>
+                      <h5 class="card-title">We have got a saviour to help you combat damage.</h5>
+                      <div class="price mb-3">
+                        <span class="discounted">₹179</span>
+
+                      </div>
+                      <a href="./product.html"
+                        class="btn btn-warning me-3">Buy Now</a>
+                      <a href="./cart.html" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="card text-center" id="thirdcard">
+
+                    <img
+                      src="https://beardo.in/cdn/shop/files/Face_Shield_Kit_2160x2160_1cb8e117-6466-41dd-aca1-caa3bb34691c.jpg?v=1714414266&width=1946"
+                      alt="" width="100%" height="200">
+                    <div class="card-body">
+                      <p class="text-uppercase text-muted mb-1">Beardo De-Tan Facewash</p>
+                      <h5 class="card-title">Beardo De-Tan Facewash for Men helps you retain</h5>
+                      <div class="price mb-3">
+                        <span class="discounted">₹360</span>
+
+                      </div>
+                      <a href="./product.html"
+                        class="btn btn-warning me-3">Buy Now</a>
+                      <a href="./cart.html" class="btn btn-primary ">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="card text-center" id="thirdcard">
+                    <img
+                      src="https://www.themancompany.com/cdn/shop/files/Beard_and_face_Wash_Primary_1_5f67f2a0-767a-4d85-891d-ec360965d670_765x.jpg?v=1719822193"
+                      alt="" width="100%" height="200">
+                    <div class="card-body">
+                      <p class="text-uppercase text-muted mb-1">Beardo BEARD GROWTH </p>
+                      <h5 class="card-title">For a thicker, healthier, shinier beard</h5>
+                      <div class="price mb-3">
+                        <span class="discounted">₹749</span>
+
+                      </div>
+                      <a href="./product.html"
+                        class="btn btn-warning me-3">Buy Now</a>
+                      <a href="./cart.html" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="carousel-item">
+              <div class="row">
+
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="card text-center" id="thirdcard">
+                    <img src="https://www.themancompany.com/cdn/shop/products/1_28_765x.jpg?v=1627227712" alt=""
+                      width="100%" height="200">
+                    <div class="card-body">
+                      <p class="text-uppercase text-muted mb-1">Beardo BEARD GROWTH</p>
+                      <h5 class="card-title">Our Lightening Lip Scrub is a blend</h5>
+                      <div class="price mb-3">
+                        <span class="discounted">₹556</span>
+
+                      </div>
+                      <a href="./product.html"
+                        class="btn btn-warning me-3">Buy Now</a>
+                      <a href="./cart.html" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="card text-center" id="thirdcard">
+                    <div class="badge discount-badge">10%
+                      OFF</div>
+                    <img
+                      src="https://www.themancompany.com/cdn/shop/files/2_8bb5f7f9-f0b0-4485-baa2-101279d2ed21_765x.jpg?v=1728454372"
+                      alt="" width="100%" height="200">
+                    <div class="card-body">
+                      <p class="text-uppercase text-muted mb-1">De-Tan Face Gel I Aloe Ve</p>
+                      <h5 class="card-title">
+                        Regular sun exposure</h5>
+                      <div class="price mb-3">
+                        <span class="discounted">₹654</span>
+
+                      </div>
+                      <a href="./product.html"
+                        class="btn btn-warning me-3">Buy Now</a>
+                      <a href="./cart.html" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="card text-center" id="thirdcard">
+                    <img
+                      src="https://www.chanel.com/images//t_one//w_0.51,h_0.51,c_crop/q_auto:good,f_autoplus,fl_lossy,dpr_1.1/w_840/boy-de-chanel-anti-shine-toning-lotion-3-38fl-oz--packshot-default-195020-9554884755486.jpg"
+                      alt="" width="100%" height="200">
+                    <div class="card-body">
+                      <p class="text-uppercase text-muted mb-1">BOY DE CHANEL ANTI-SHINE</p>
+                      <h5 class="card-title">Anti Shine Tonning Lotion Bottle</h5>
+                      <div class="price mb-3">
+                        <span class="discounted">5,999</span>
+
+                      </div>
+                      <a href="./product.html"
+                        class="btn btn-warning me-3">Buy Now</a>
+                      <a href="./cart.html" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="card text-center" id="thirdcard">
+                    <img
+                      src="https://bellavitaorganic.com/cdn/shop/files/CEOMan500mlShowerGel-01.jpg?v=1692770100&width=1000"
+                      alt="" width="100%" height="200"">
+                                  <div class=" card-body">
+                    <p class="text-uppercase text-muted mb-1">Bella Vita Luxury Shower Gel</p>
+                    <h5 class="card-title">Bathe in the essence of your favourite perfume</h5>
+                    <div class="price mb-3">
+                      <span class="discounted">₹350</span>
+
+                    </div>
+                    <a href="./product.html"
+                      class="btn btn-warning me-3">Buy Now</a>
+                    <a href="./cart.html" class="btn btn-primary">Add to Cart</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#collectionCarousel" data-bs-slide="prev"
+          fdprocessedid="zzg9wx">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#collectionCarousel" data-bs-slide="next"
+          fdprocessedid="gkpwlm">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    </div>
+    <div>
+
+      <div class="prose justify-items-center text-center mt-3">
+        <p class="h1 hyphenate">Men's Spiritual Jewellery</p>
+        <div class="Jewellery mt-3">
+          <p>Elevate your style and spirit with Mesmerize's high-quality men's spiritual jewelry—crafted to <br>
+            perfection,designed for the modern man seeking balance, protection, and timeless elegance.</p>
+        </div>
+
+
+
+        <div class="container-fluid bg-dark">
+          <div class="row">
+            <div class="col-4">
+              <div class="card" style="width: 100%">
+                <a href="./product2.html"><img
+                    src="https://mesmerizeindia.com/cdn/shop/files/Yin_Yang_Sirius_Black_Bracelet_2_921bee69-5339-468d-9c5b-a8cbddf12447.jpg?v=1726906192&width=800"
+                    class="card-img-top" alt="..."></a>
+
+              </div>
+
+            </div>
+            <div class="col-4">
+              <div class="card" style="width: 100%">
+                <a href="./product2.html"> <img
+                    src="https://mesmerizeindia.com/cdn/shop/files/Offer_Image_Mens_Premium_14ca73a9-2857-455d-8854-a8d97d93dcc0.jpg?v=1733302552&width=800"
+                    class="card-img-top" alt="..."></a>
+
+              </div>
+
+            </div>
+            <div class="col-4">
+              <div class="card" style="width: 100%">
+                <a href="./product2.html"> <img
+                    src="https://mesmerizeindia.com/cdn/shop/files/PositivityHanumanChalisa9VerseGoldTagNecklace.jpg?v=1723903819&width=800"
+                    class="card-img-top" alt="..."></a>
+
+              </div>
+
+            </div>
+            <div class="col-4">
+              <div class="card mt-5" style="width: 100%">
+                <a href="./product2.html"><img
+                    src="https://rukminim2.flixcart.com/image/720/864/xif0q/ring/1/f/f/20-1-cf-black-ring-matty-size-no-20-ring-crazy-fashion-original-imah5h65agzpmpzb.jpeg?q=60&crop=false"
+                    class="card-img-top" alt="..."></a>
+
+              </div>
+
+            </div>
+            <div class="col-4">
+              <div class="card mt-5" style="width: 100%">
+                <a href="./product2.html"><img
+                    src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTkvv1OidIOTY1q9qjpyU704HOVQAhUiY3wFdimOQ8QdMW-feRKsDPvR8EAnXh88Ho9GoSe7_bbQ9IBPiJmA3B9oL8GgeEscGj_-PhMp7E&usqp=CAE"
+                    class="card-img-top" alt="..."></a>
+
+              </div>
+
+            </div>
+            <div class="col-4">
+              <div class="card mt-5" style="width: 100%">
+                <a href="./product2.html"> <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTemKugbuPu35RTebkj2QF1-geJrkL9K1FXpWAiOlrl5C4WIuGhhM7IBlohZK1tMAkws2Q&usqp=CAU"
+                    class="card-img-top" alt="..."></a>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <a href="./product-perfume.html"> <img
+          src="https://img.perfume.com/images/l/1/d/0/homeimage_1250@2x.webp?v=CTTHC7EWBHTWS95" alt=" " width="100%"
+          height="200"></a>
+
+
+
+
+
+      <div class="container-fluid bg-dark">
+        <div class="row">
+          <div class="col-4">
+            <div class="card" style="width: 100%">
+              <a href="./product-perfume.html"><img
+                  src="https://www.themancompany.com/cdn/shop/files/fragDESKTOP_Daily_480x.jpg?v=1721650907"
+                  class="card-img-top" alt="..."></a>
+              <h3 class="text-center">DAILY </h3>
+
+            </div>
+
+          </div>
+          <div class="col-4">
+            <div class="card" style="width: 100%">
+              <a href="./product-perfume.html"> <img
+                  src="https://www.themancompany.com/cdn/shop/files/fragDESKTOP_date_480x.jpg?v=1721650868"
+                  class="card-img-top" alt="..."></a>
+              <h3 class="text-center">DATE</h3>
+
+            </div>
+
+          </div>
+          <div class="col-4">
+            <div class="card" style="width: 100%">
+              <a href="./product-perfume.html"> <img
+                  src="https://www.themancompany.com/cdn/shop/files/fragDESKTOP_gym_480x.jpg?v=1723108689"
+                  class="card-img-top" alt="..."></a>
+              <h3 class="text-center">GYM</h3>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <div>
+      
+    </div>
+    <div>
+      <img
+      src="data:image/png;base64,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"
+      alt="" width="100%" height="150px">
+    </div>
+
+     <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Company</h4>
+                    <a class="btn btn-link" href="/about-us/">About Us</a>
+                  
+                    
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contact</h4>
+                    
+    
+
+                    <div class="branch">
+                        <h5 class="text-white">BeautyMan</h5>
+                  
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 6238206339</p>
+
+                            
+                    
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>Shazz4568@gmail.com</p>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Our product's</h4>
+                    <p class="mb-2">Oils</p>
+                    <p class="mb-2">Perfumes</p>
+                    <p class="mb-2">Hair Cream</p>
+                    <p class="mb-2">Shambu</p>
+                    <p class="mb-2">Ring's</p>
+                    <p class="mb-2">Jewellery's</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Stay To Upadtion</h4>
+                    <p>Sign for the latest products Choosing</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                       <a href="./singform.html"><input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="email" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2" fdprocessedid="g92ljl">Sign Up</button></a>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        © <a class="border-bottom" href="./index.html">BeautyMan</a>, All Right Reserved. 
+                     
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+  </body>
+
+  </html>

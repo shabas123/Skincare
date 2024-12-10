@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productiin</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik+Wet+Paint&display=swap"
+      rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <style>
+        .navbar {
+        background-color: black;
+        padding: 10px 20px;
+        color: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .navbar-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+
+
+      .cart,
+      .wishlist,
+      .notification {
+        position: initial;
+      }
+
+      .cart-icon,
+      .wishlist-icon,
+      .notification-icon {
+        font-size: 24px;
+        color: white;
+        text-decoration: none;
+
+      }
+
+      .logo {
+        font-weight: 1000;
+        font-size: large;
+      }
+      
+    </style>
+</head>
+<body>
+    <nav class="navbar fixed-top ">
+        <img src="./image/logo.png" alt="" width="70">
+        <div class="navbar-container ms-auto">
+          <form class="navbar-form navbar-right me-4" action="/action_page.php">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search beautyMaN">
+              <i class="glyphicon glyphicon-search"></i>
+            </div>
+  
+        </div>
+  
+  
+        <div class="wishlist me-4">
+          <a href="./wishlist.html" class="wishlist-icon">
+            <i class="fa fa-heart"></i>
+  
+          </a>
+        </div>
+        </li>
+        <div class="cart">
+          <a href="./cart.html#" class="cart-icon me-4">
+            <i class="fa fa-shopping-cart"></i>
+          </a>
+        </div>
+  
+        <div>
+  
+        </div class="notification me-4">
+        <a href="#" class="notification-icon">
+          <i class="fa fa-bell"></i>
+           </a>
+        </div>
+        </li>
+        </ul>
+        </div>
+      </nav>
+      <div class="img-fluid mt-3">
+          <img
+            src="https://arabianaroma.co.in/cdn/shop/files/gsrfh.png?v=1719837089&width=1000"
+            alt="" width="100%" height="400">
+        </div>
+
+
+         <section class="cards products bg-primary-emphasis py-4">
+        <p class="h1 hyphenate  text-center mb-3">- Perfumes for Him - </p>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+             
+                <div class="col">
+                    <div class="card ">
+                        <img src="https://www.ogbeauty.in/cdn/shop/files/OGLuxuryWoodyPerfumePI_3_2.jpg?v=1730717638" class="card-img-top" alt="">
+                         <div class="card-body text-center">
+                            <p class="card-text">Luxury Eau De Parfum Woody, 50 Ml</p>
+                            <h5 class="card-text mb-2"> ₹349 </h5>
+                            <a href="./shop.html" class="btn btn-warning me-3">Buy Now</a>
+                            <a href="./cart.html" class="btn btn-primary">Add to Cart</a>
+                            
+                  
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="col">
+                    <div class="card ">
+                        <img src="https://bellavitaorganic.com/cdn/shop/files/CEOManIntense-01_c653210f-6d29-4fdf-b34a-1a4863dbc15c.jpg?v=1714548363&width=1000" class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                            <p class="card-text">CEO Man Intense Perfume - 100ml </p>
+                            <h5 class="card-text mb-2"> ₹849 </h5>
+                            <a href="./shop.html" class="btn btn-warning me-3">Buy Now</a>
+                            <a href="./cart.html" class="btn btn-primary">Add to Cart</a>
+
+                        </div>
+                    </div>
+                </div>
+              
+                <div class="col">
+                    <div class="card">
+                        <img src="https://bellavitaorganic.com/cdn/shop/files/Tiger-10_1_2_1.jpg?v=1720330847&width=1000" class="card-img-top" alt="" height="280">
+                        <div class="card-body text-center">
+                            <p class="card-text">Tiger Man Perfume - 100ml</p>
+                            <h5 class="card-text mb-2"> ₹1559</h5>
+                            <a href="./shop.html" class="btn btn-warning me-3">Buy Now</a>
+                            <a href="./cart.html" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="card">
+                        <img src="https://arabianaroma.co.in/cdn/shop/files/8.png?v=1718451547&width=1000" class="card-img-top" alt="C">
+                        <div class="card-body text-center">
+                            <p class="card-text">"Dark." Its essence, a blend of Cinnamon Bark</p>
+                            <h5 class="card-text mb-2"> ₹599 </h5>
+                            <a href="./shop.html" class="btn btn-warning me-3">Buy Now</a>
+                            <a href="./cart.html" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="card ">
+                        <img src="https://arabianaroma.co.in/cdn/shop/files/aventus_3_10d9cc83-a0d8-426f-ab1e-a8b71c877195.png?v=1724926729&width=1000" class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                            <p class="card-text"> Floral fragrance for men.Top notes are Peony, Citruses</p>
+                            <h5 class="card-text mb-2"> ₹649 </h5>
+                            <a href="./shop.html" class="btn btn-warning me-3">Buy Now</a>
+                            <a href="./cart.html" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col">
+                    <div class="card ">
+                        <img src="https://paradyseperfumes.in/cdn/shop/files/Savage2_e60ed108-867c-440d-80c9-83612d28b703_1000x.png?v=1730723517" class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                            <p class="card-text">Savage - Body Mist Sichuan Pepper</p>
+                            <h5 class="card-text mb-2"> ₹249 </h5>
+                            <a href="./shop.html" class="btn btn-warning me-3">Buy Now</a>
+                            <a href="./cart.html" class="btn btn-primary">Add to Cart</a>
+                            
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col">
+                    <div class="card">
+                        <img src="https://www.mcaffeine.com/cdn/shop/files/Slow-Kiss-Primary.jpg?v=1727678109" class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                            <p class="card-text">Slow Kiss Perfume for Men - Aromatic Fresh - 100ml</p>
+                            <h5 class="card-text mb-2"> ₹899</h5>
+                            <a href="./shop.html" class="btn btn-warning me-3">Buy Now</a>
+                            <a href="./cart.html" class="btn btn-primary">Add to Cart</a>
+                        
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="card">
+                        <img src="https://www.mcaffeine.com/cdn/shop/files/Fierce-Primary.jpg?v=1727678035" class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                            <p class="card-text">Fierce Perfume for Men - Citrusy Scent - 100ml</p>
+                                <h5 class="card-text mb-2"> ₹779 </h5>
+                                <a href="./shop.html" class="btn btn-warning me-3">Buy Now</a>
+                            <a href="./cart.html" class="btn btn-primary">Add to Cart</a>
+            
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="https://www.mcaffeine.com/cdn/shop/files/Magnetic-Primary.jpg?v=1727678163" class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                            <p class="card-text">Magnetic Perfume for Men - Aquatic - 100ml</p>
+                                <h5 class="card-text mb-2"> ₹699</h5>
+                                <a href="./shop.html" class="btn btn-warning me-3">Buy Now</a>
+                                <a href="./cart.html" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col">
+                    <div class="card">
+                        <img src="https://fraganote.com/cdn/shop/files/A7404457_1.jpg?v=1724835051&width=493" class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                            <p class="card-text">London Bar EAU DE PARFUM 50ML
+                                Men</p>
+                                <h5 class="card-text mb-2"> ₹1449</h5>
+                                <a href="./shop.html" class="btn btn-warning me-3">Buy Now</a>
+                                <a href="./cart.html" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card ">
+                        <img src="https://cdn.shopify.com/s/files/1/0670/8323/9728/files/Web_1920_6_1.jpg?v=1731410503" class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                            <p class="card-text">Uncensored Blue grapefruit and cardamom kick 50ML</p>
+                                <h5 class="card-text mb-2"> ₹1599 </h5>
+                                <a href="./shop.html" class="btn btn-warning me-3">Buy Now</a>
+                                <a href="./cart.html" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col">
+                    <div class="card ">
+                        <img src="https://www.riyalifestyle.com/cdn/shop/products/Classico_Black_D_1.jpg?v=1686304935&width=750" class="card-img-top" alt="">
+                        <div class="card-body text-center">
+                            <p class="card-text">Classico | Men's Perfume | 100 ml Eau De Parfum </p>
+                                <h5 class="card-text mb-2"> ₹349 </h5>
+                                <a href="./shop.html" class="btn btn-warning me-3">Buy Now</a>
+                                <a href="./cart.html" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <div>
+        
+     </div>
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Company</h4>
+                    <a class="btn btn-link" href="/about-us/">About Us</a>
+                  
+                    
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contact</h4>
+                    
+    
+
+                    <div class="branch">
+                        <h5 class="text-white">BeautyMan</h5>
+                  
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 6238206339</p>
+
+                            
+                    
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>Shazz4568@gmail.com</p>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Our product's</h4>
+                    <p class="mb-2">Oils</p>
+                    <p class="mb-2">Perfumes</p>
+                    <p class="mb-2">Hair Cream</p>
+                    <p class="mb-2">Shambu</p>
+                    <p class="mb-2">Ring's</p>
+                    <p class="mb-2">Jewellery's</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Stay To Upadtion</h4>
+                    <p>Sign for the latest products Choosing</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                       <a href="./singform.html"><input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="email" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2" fdprocessedid="g92ljl">Sign Up</button></a>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        © <a class="border-bottom" href="./index.html">BeautyMan</a>, All Right Reserved. 
+                     
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    </body>
+    </html>
